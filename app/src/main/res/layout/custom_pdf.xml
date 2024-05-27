@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/jm"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgc"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:padding="10dp"
+            android:src="@drawable/newlogo">
+        </ImageView>
+
+
+        <TextView
+            android:id="@+id/pdFCAT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_horizontal"
+            android:layout_toLeftOf="@id/downlodes"
+            android:layout_toRightOf="@id/imgc"
+            android:text="English PDF gernal "
+            android:textColor="@color/black"
+            android:textSize="18sp">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/rightarrow"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="25dp"
+            android:id="@+id/downlodes"/>
+
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_below="@id/jm"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginBottom="10dp"/>
+
+
+</RelativeLayout>

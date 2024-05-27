@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:backgroundTint="@color/white"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="150dp">
+
+          <TextView
+              android:id="@+id/are"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Are you sure?"
+              android:textSize="24sp"
+              android:textStyle="bold"
+              android:textColor="@color/black"
+              android:layout_alignParentEnd="true"
+              android:layout_alignParentStart="true"
+              android:layout_alignParentTop="true"
+              android:gravity="center"
+              android:layout_marginTop="10dp">
+          </TextView>
+            
+            <TextView
+                android:id="@+id/cc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/are"
+                android:text="Do you want to logout?"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true">
+            </TextView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/cc"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true"
+                android:layout_marginHorizontal="40dp"
+                android:layout_marginTop="30dp"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/no"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:text="No"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/yes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:text="Yes"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

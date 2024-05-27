@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Mocktestquestionss">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/rl1"
+        android:background="@color/white"
+        android:elevation="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+
+        <ImageView
+            android:id="@+id/timg"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/leftarrow"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true">
+
+        </ImageView>
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/newlogo"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="right">
+
+        </ImageView>
+        <TextView
+            android:id="@+id/tt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl1"
+            android:layout_gravity="center_horizontal"
+            android:text="SSC GD Free Mock Test"
+            android:textColor="@color/black"
+            android:textSize="18sp">
+
+        </TextView>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+
+    <ImageView
+        android:id="@+id/timerimg"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/rl1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/timerimage">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="00:00"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@id/timerimg"
+        android:layout_below="@id/rl1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/plus"
+        android:layout_width="30dp"
+        android:layout_height="15dp"
+        android:background="#48E80F"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@id/timer"
+        android:layout_alignBottom="@id/timer"
+        android:layout_marginLeft="10dp"
+        android:text="+2"
+
+        android:gravity="center"
+        android:textSize="10sp"/>
+    <TextView
+        android:id="@+id/minus"
+        android:layout_width="30dp"
+        android:layout_height="15dp"
+        android:background="#F40418"
+        android:layout_toRightOf="@id/plus"
+        android:layout_alignBottom="@id/plus"
+        android:layout_marginLeft="5dp"
+        android:text="-1"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="10sp"/>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/timerimg">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/testque"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="10dp"
+                android:textColor="@color/black"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:text="  ">
+            </TextView>
+
+            <RelativeLayout
+                android:id="@+id/a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/testque"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/clickcolorchange"
+                android:layout_marginHorizontal="10dp"
+                android:clickable="true">
+
+                <TextView
+                    android:id="@+id/ta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="dbckdackad"
+                    android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="12dp"
+                    android:layout_alignParentStart="true"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/a"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/clickcolorchange"
+                android:layout_marginHorizontal="10dp">
+
+                <TextView
+                    android:id="@+id/tb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="dbckdackad"
+                    android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingVertical="12dp"
+                    android:paddingHorizontal="10dp"
+                    android:layout_alignParentStart="true"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/b"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/clickcolorchange"
+                android:layout_marginHorizontal="10dp">
+
+                <TextView
+                    android:id="@+id/tc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="dbckdackad"
+                    android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="12dp"
+                    android:layout_alignParentStart="true"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/c"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/clickcolorchange"
+                android:layout_marginHorizontal="10dp"
+
+                android:layout_marginBottom="90dp">
+
+                <TextView
+                    android:id="@+id/td"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="12dp"
+                    android:text="dbckdackad"
+
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/saveandnext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:text="Save and Next"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        android:background="@drawable/signup"
+        >
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/finish_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:text="Finish"
+        android:textColor="@color/black"
+        android:visibility="gone"
+        android:textAllCaps="false"
+        android:background="@drawable/signup"
+        >
+    </androidx.appcompat.widget.AppCompatButton>
+
+
+
+</RelativeLayout>

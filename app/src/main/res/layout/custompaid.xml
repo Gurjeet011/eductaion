@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/outline2">
+
+        <RelativeLayout
+            android:id="@+id/cards"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/outline2"
+            android:padding="1dp">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="10dp">
+
+                <ImageView
+                    android:id="@+id/img12"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:src="@drawable/ic_launcher_background">
+
+                </ImageView>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/te1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cards"
+            android:layout_alignLeft="@id/cards"
+            android:layout_alignRight="@id/cards"
+            android:text="uiiugfuigiufgfuibifbububibfjkbiufbuibjbiubebuifebjfbuifbuifbbfbibfibi"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/te1"
+            android:layout_alignLeft="@id/cards"
+            android:text="expiry date on 29jun2023"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Readmoree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tt2"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/signup"
+            android:text="Read More"
+            android:textAllCaps="false"
+            android:textColor="@color/black"></androidx.appcompat.widget.AppCompatButton>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>

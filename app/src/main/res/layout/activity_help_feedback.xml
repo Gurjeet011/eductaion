@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Help_Feedback">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/rl1"
+        android:background="@color/white"
+        android:elevation="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/leftarrow"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true">
+
+        </ImageView>
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/newlogo"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="right">
+
+        </ImageView>
+        <TextView
+            android:id="@+id/tt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl1"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="Suggestion &amp; Feedback"
+            android:textColor="@color/black"
+            android:textSize="18sp"></TextView>
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/rl1"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/dot_background"
+        >
+
+        <EditText
+            android:id="@+id/note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Add your Feedback"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:background="@android:color/transparent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginHorizontal="10dp"
+            android:textSize="16sp"
+            android:layout_marginVertical="10dp"/>
+
+
+    </RelativeLayout>
+
+
+<!--    <EditText-->
+<!--        android:id="@+id/namex"-->
+<!--        android:hint="name"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/vvv"-->
+<!--        android:layout_marginHorizontal="10dp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textSize="20sp"-->
+<!--        android:layout_marginTop="10dp"/>-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/num"-->
+<!--        android:hint="number"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/namex"-->
+<!--        android:layout_marginHorizontal="10dp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textSize="20sp"-->
+<!--        android:layout_marginTop="10dp"/>-->
+
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sumbit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:text="Submit"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        android:background="@drawable/signup"
+        >
+    </androidx.appcompat.widget.AppCompatButton>
+
+
+</RelativeLayout>

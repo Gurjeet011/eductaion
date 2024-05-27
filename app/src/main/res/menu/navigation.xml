@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="My Profile"
+        android:id="@+id/profie"
+        
+        android:icon="@drawable/pro"/>
+
+    <item android:title="Purchase History"
+        android:id="@+id/history"
+        android:icon="@drawable/history"/>
+    <item android:title="Share"
+        android:id="@+id/Share"
+        android:icon="@drawable/share"/>
+    <item android:title="Suggestion &amp; Feedback"
+        android:id="@+id/feedback"
+        android:icon="@drawable/feedback"/>
+    <item android:title="Terms Conditions"
+        android:id="@+id/Conditions"
+        android:icon="@drawable/termsconditions"/>
+    <item android:title="Privacy Policy"
+        android:id="@+id/policy"
+        android:icon="@drawable/privacy"
+        />
+
+    <item android:title="Log out"
+        android:id="@+id/logout"
+        android:icon="@drawable/logout"/>
+</menu>

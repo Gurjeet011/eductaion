@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Description">
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/rl1"
+        android:elevation="10dp"
+
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+
+        <ImageView
+            android:id="@+id/ghg"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/leftarrow"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true">
+
+        </ImageView>
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/newlogo"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="right">
+
+        </ImageView>
+
+    </androidx.appcompat.widget.Toolbar>
+    <TextView
+        android:id="@+id/t1x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl1"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="">
+    </TextView>
+
+    <TextView
+        android:id="@+id/duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Duration"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:layout_below="@id/t1x"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold">
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/duration"
+        android:layout_alignStart="@+id/duration"
+        android:layout_alignEnd="@+id/duration"
+        android:gravity="center"
+        android:layout_toRightOf="@id/duration"
+        android:text="10min"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"
+        android:textSize="15sp"
+        android:textStyle="bold"></TextView>
+
+
+    <TextView
+        android:id="@+id/markstotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Max Marks"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:layout_toRightOf="@id/duration"
+        android:layout_below="@id/t1x"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold">
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/totalmarks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1000"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:layout_alignStart="@+id/markstotal"
+        android:layout_alignEnd="@+id/markstotal"
+        android:gravity="center"
+        android:layout_below="@id/markstotal"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold">
+    </TextView>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/agree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:text="Agree &amp; continue"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        android:background="@drawable/signup"
+        >
+    </androidx.appcompat.widget.AppCompatButton>
+
+</RelativeLayout>

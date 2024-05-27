@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Homegragment">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+
+
+
+
+            <com.smarteist.autoimageslider.SliderView
+                android:id="@+id/baner"
+                android:background="@color/white"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                app:sliderIndicatorEnabled="true"
+                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="10dp"
+                app:sliderIndicatorUnselectedColor="@color/white"
+                app:sliderIndicatorSelectedColor="@color/black"
+                android:layout_height="200dp">
+
+            </com.smarteist.autoimageslider.SliderView>
+
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rc1"
+                android:layout_below="@id/baner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100dp"
+                android:visibility="visible" />
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>
